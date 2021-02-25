@@ -1,15 +1,15 @@
 // https://github.com/tc39/proposals/blob/master/finished-proposals.md
 
 // String.prototype.replaceAll (https://github.com/tc39/proposal-string-replaceall)
-/* const str = "Programadores anonimos";
+const str = "Programadores anonimos";
 
 console.log(str.replace("a", "4"));
 console.log(str.replace(/a/g, "4"));
-console.log(str.replaceAll("a", "4")); */
+console.log(str.replaceAll("a", "4"));
 
 // Promise.any (https://github.com/tc39/proposal-promise-any)
 
-/* const promise1 = new Promise((_, reject) =>
+const promise1 = new Promise((_, reject) =>
   setTimeout(
     () => {
       console.log("rejecting promise1");
@@ -30,12 +30,12 @@ const promises = [promise1, promise2, promise3];
 Promise.any(promises).then((value) => {
   console.log("Promise.any subscription");
   console.log(value);
-}); */
+});
 
 // WeakRefs (https://github.com/tc39/proposal-weakrefs)
 // reference to and object it stay in memory as long as the reference exists
 
-/* const aBigObj = new WeakRef({
+const aBigObj = new WeakRef({
   programadores: "Anonimos",
 });
 let count = 0;
@@ -55,7 +55,7 @@ const callback = () => {
       resolve();
     }, 1000);
   });
-})(); */
+})();
 
 // 1.creating weak references to objects with the WeakRef class
 // 2. running user-defined finalizers after objects are garbage-collected, with the FinalizationRegistry class
