@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx babel-node src/index.js",
+    "start": "npx babel-node src/index.js --expose-gc --inspect --max-old-space-size=5000",
     "build": "babel src -d lib"
   },
   "keywords": [],
